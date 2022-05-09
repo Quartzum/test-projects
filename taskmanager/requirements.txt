@@ -1,0 +1,21 @@
+# Documentation for project Taskmanager
+# Create on - Django 4.0.4 and Python 3.9.12
+# -------------------------------------------
+
+# 1.Launch venv.
+
+# a) Left side bottom button - Python.
+# b) Choose the environment that suits you.
+
+# 2.Lauch local server.
+
+# a) cd taskmanager
+# b) python manage.py runserver
+
+
+# 3. Admin.
+
+#Superuser - admin
+#Password - admin
+
+
