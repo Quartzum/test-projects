@@ -1,0 +1,40 @@
+Конструкции JS
+
+console.log() - выводит то, что находится в скобках в терминал логов.
+alert() - выводит на экран всплывающие окно с чем-то.(относится только к Web)
+prompt(относится только к Web)
+console.log(typeof name) - позволяет по имени чего-то определить тип данных.
+console.log(Number.MAX_SAFE_INTEGER) - позволяет обратиться к максимально большому числу типа number.
+function(name) - вызов функции
+
+Методы
+1)
+.toString - превращает тип данных в строку
+
+Пример: console.log(name.toString) - сделает так, что в логах данные будут указаны, как строка
+
+2)
+
+
+//Части кода
+
+1) Обратная функция
+
+function summ(a, b){
+    return a + b
+}
+
+function diff(a, b){
+    return a - b
+}
+
+const result = summ(summ(15, 15), summ(20, 20))
+console.log(result)
+
+function doSomething(func){
+    let result = func(10, 15)
+    console.log(result)
+}
+
+doSomething(summ)//25
+doSomething(diff)//-5
