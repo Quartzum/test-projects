@@ -1,0 +1,20 @@
+1) Обратная функция
+
+function summ(a, b){
+    return a + b
+}
+
+function diff(a, b){
+    return a - b
+}
+
+const result = summ(summ(15, 15), summ(20, 20))
+console.log(result)
+
+function doSomething(func){
+    let result = func(10, 15)
+    console.log(result)
+}
+
+doSomething(summ)//25
+doSomething(diff)//-5
