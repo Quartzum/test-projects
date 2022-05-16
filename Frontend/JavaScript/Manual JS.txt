@@ -515,19 +515,23 @@ Web конструкции JavaScipt
 
 1)Выбор DOM элементов
 ==================================================================================================
-Выбор одного элемента DOM по селектору.
+document - обращение к документу(в данном случаи, к HTML).
+querySelector - обращение к селектору(тегу, классу, ID).
+В скобках можно использовать составные теги(h2.heading ...).
 
-document.querySelector('selector') - c помощью скобок можно
-обратиться к тегу, селектору, id или классу.
-Также можно использовать составные селекторы.
-
-Это команда возвращает только один элемент.
-
+document.querySelector('selector') - структура.
 document.querySelector('.heading-3').classList.add('green') - добавление свойства CSS по классу.
 
-1.1)Выбор коллекции элементов через цикл for.
+Метод querySelector - работает только с первым селектором, который попадется.
+
+document.querySelectorAll('selector') - работа с несколькими селекторами одновременно.
+
+Не работает без цикла for.
+
+1.1)Выбор коллекции элементов через цикл for of.
 ==================================================================================================
 1)Ищем все теги h2.
+
 const headings = document.querySelectorAll('h2')
 console.log(headings)
 
@@ -536,7 +540,7 @@ for (let heading of headings) {
     heading.classList.add('red-text')
 }
 
-1.2)Выбор коллекции элементов через цикл for.
+1.2)Выбор коллекции элементов через цикл forEach.
 ==================================================================================================
 const paragraphs = document.querySelectorAll('p')
 paragraphs.forEach(function (item){
@@ -545,9 +549,10 @@ paragraphs.forEach(function (item){
 
 Старые методы:
 
-document.getElementsByClassName('selector') - выбор коллекции элементов по CSS классу
+document.getElementsByClassName('selector') - выбор коллекции элементов по CSS классу(нельзя использовать с циклом
+forEach. Либо ее будет нужно превратить в массив).
 document.getElementsByTagName('selector') - выбор коллекции элементов по тегу
-document.getElementById('selector') - выбор одного элемента по ID
+document.getElementById('selector') -lin выбор одного элемента по ID
 
 Точки и # во всех методах писать не надо, т.к. метод подразумевает,
 что мы работаем с классами и ID.

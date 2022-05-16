@@ -1,5 +1,7 @@
-let img = document.querySelector('#logo')
-const srcValue = img.getAttribute('src')
-console.log(srcValue)
+const headings = document.querySelectorAll('h2');
+console.log('h2')
 
-img.setAttrubute('src', './img/php.png');
+for(let item of headings){
+    console.log(item);
+    item.classList.add('red-text')
+}
