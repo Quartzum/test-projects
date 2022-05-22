@@ -1,0 +1,3 @@
+set-ExecutionPolicy RemoteSigned - Sets the PowerShell execution policies for Windows computers.
+(если показывает RemoteSigned, то политика поменяна)
+get-ExecutionPolicy - Get the PowerShell execution policies for Windows computers.
