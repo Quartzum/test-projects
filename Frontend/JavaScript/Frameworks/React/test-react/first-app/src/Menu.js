@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Menu = () => {
+const Menu = () => {
   return (
     <div>
-        <h1>Menu</h1>
+        <h1>Arrow Function</h1>
     </div>
   )
 }
+
+export default Menu;
