@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Ccomponent from './Ccomponent';
+import Func from './Func';
 
 
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Ccomponent/>
+        <Func/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>Viktor Popov</p>
         <a

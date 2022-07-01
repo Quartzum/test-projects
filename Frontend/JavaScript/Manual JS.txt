@@ -133,7 +133,7 @@ function sayHi(){
 }
 
 
-2)Function expression - это функция, которая записывается в переменную или постоянную
+2)Function expression - это функция, которая записывается в переменную или постоянную.
 
 const sayHi = function(){
     alert('Привет')
